@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Londrina+Solid&family=Philosopher:wght@700&family=Poppins:wght@600&family=Tilt+Prism&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=DM+Sans:opsz,wght@9..40,300&family=Londrina+Solid&family=Nunito&family=Philosopher:wght@700&family=Poppins:wght@600&family=Tilt+Prism&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=DM+Sans:opsz,wght@9..40,300&family=Londrina+Solid&family=Nunito&family=Philosopher:wght@700&family=Poppins:wght@600&family=Preahvihear&family=Tilt+Prism&family=Zeyada&display=swap');
+body{
+    margin: 0px;
+    /* background-color:beige; */
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav .logo{
+    display: flex;
+    align-items: center;
+}
+
+.title h3{
+    font-family: 'Preahvihear', sans-serif;
+}
+
+nav .logo img{
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+nav .logo .title{
+    color: white;
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+nav ul li{
+    color:white;
+    background-color: black;
+    padding: 20px 20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-family: 'Preahvihear', sans-serif;
+}
+
+nav ul li:hover{
+    background-color: grey;
+}
+
+nav ul li a:hover{
+    color: rgb(20, 20, 20);
+}
+
+
+.main-page .photo{
+    display: flex;
+}
+
+.photo1{
+    background-image: url("co2.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 480px;
+    width: 50%;
+    /* filter: blur(2px); */
+    /* opacity: 0.8; */
+    filter: brightness(0.7);
+}
+
+.text1{
+    position: absolute;
+    top:280px;
+    left: 230px;
+}
+
+.text1 a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    text-shadow: 4px 4px 2px rgb(2, 2, 2);
+    font-family: 'Poppins', sans-serif;
+}
+
+.photo2{
+    background-image: url("co4.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 480px;
+    width: 50%;
+    /* filter: blur(2px); */
+    /* opacity: 0.8; */
+    filter: brightness(0.6);
+}
+
+.text2{
+    position: absolute;
+    top:280px;
+    right: 230px;
+}
+
+.text2 a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    text-shadow: 4px 4px 2px rgb(2, 2, 2);
+    font-family: 'Poppins', sans-serif;
+}
+
+.text1 h1:hover{
+    color:brown;
+    text-shadow: 3px 3px 3px rgb(231, 226, 226);
+}
+
+.text2 h1:hover{
+    color:brown;
+    text-shadow: 3px 3px 3px rgb(231, 226, 226);
+}
+
+.body_text{
+    height: 170px;
+    width: 70%;
+    /* background-color: gainsboro; */
+    background-color: beige;
+    position: relative;
+    left:15%;
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+
+.main-page .body_text p{
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+    padding: 20px;
+}
+
+footer{
+    height: 280px;
+    width: 100%;
+    background-color: black;
+}
+
+footer h1{
+    color: white;
+    text-align: center;
+    padding: 40px 0px 10px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+footer p{
+    color:white;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+footer .icons{
+    position: absolute;
+    left:470px;
+}
+
+footer .icons img{
+    height: 35px;
+    width: 35px;
+    margin: 20px;
+}

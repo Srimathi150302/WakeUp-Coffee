@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Source</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Architects+Daughter&family=Barlow+Condensed&family=Boogaloo&family=Cinzel+Decorative:wght@700&family=DM+Sans:opsz,wght@9..40,300&family=Darker+Grotesque:wght@500&family=Lateef&family=Londrina+Solid&family=Metrophobic&family=Nunito&family=Philosopher:wght@700&family=Poppins:wght@600&family=Preahvihear&family=Rakkas&family=Rammetto+One&family=Rancho&family=Rhodium+Libre&family=Tai+Heritage+Pro&family=Tenali+Ramakrishna&family=Tilt+Prism&family=Zeyada&display=swap');
+        body{
+            margin: 0px;
+            /*background-color:beige; */
+        }
+        
+        nav{
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .nav .logo{
+            display: flex;
+            align-items: center;
+        }
+        
+        .title h3{
+            font-family: 'Preahvihear', sans-serif;
+        }
+        
+        nav .logo img{
+            height: 50px;
+            width: 50px;
+            padding: 20px;
+            border-radius: 50%;
+        }
+        
+        nav .logo .title{
+            color: white;
+            font-weight: bold;
+        }
+        
+        nav ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        
+        nav ul li{
+            color:white;
+            background-color: black;
+            padding: 20px 20px;
+        }
+        
+        nav ul li a{
+            color:white;
+            text-decoration: none;
+            font-family: 'Preahvihear', sans-serif;
+        }
+        
+        nav ul li:hover{
+            background-color: grey;
+        }
+        
+        nav ul li a:hover{
+            color: rgb(20, 20, 20);
+        }
+
+        .img-start img{
+            height: 250px;
+            width: 100%;
+            margin-left: -3px;
+        }
+        .img-start h4{
+            font-family: 'Rhodium Libre', serif;
+            text-align: center;
+            font-size: 45px;
+        }
+
+        .headline{
+            background-color: beige;
+            margin: 0px 100px 0px 100px;
+        }
+        .headline p{
+            padding: 30px 50px 10px 50px;
+            text-align: justify;
+            font-family: 'Darker Grotesque', sans-serif;
+            font-size: 23px;
+        }
+
+        .estate1{
+            height: 300px;
+            background-image: url('est1.jpg');
+            background-size: cover;
+            margin: 50px 100px 10px 100px;
+            background-position: 10% 20%;
+        }
+        .estate1:hover{
+            transition: transform 0.3s ease;
+            transform: scale(0.9);
+        }
+        .estate2{
+            height: 300px;
+            background-image: url('est2.jpg');
+            background-size: cover;
+            margin: 50px 100px 10px 100px;
+            background-position: 10% 30%;  
+        }
+        .estate2:hover{
+            transition: transform 0.3s ease;
+            transform: scale(0.9);
+        }
+        .estate3{
+            height: 300px;
+            background-image: url('est3.jpg');
+            background-size: cover;
+            margin: 50px 100px 50px 100px;
+            background-position: 10% 30%;
+        }
+        .estate3:hover{
+            transition: transform 0.3s ease;
+            transform: scale(0.9);
+        }
+        .estate1 h3{
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            color: whitesmoke;
+            padding: 50px 0px 10px 370px;
+        }
+        .estate1 p{
+            font-family: 'DM Sans', sans-serif;
+            font-size: 20px;
+            color: whitesmoke;
+            text-align: center;
+            padding: 20px 50px 0px 50px;
+        }
+        .estate2 h3{
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            color: whitesmoke;
+            padding: 50px 0px 10px 420px;
+        }
+        .estate2 p{
+            font-family: 'DM Sans', sans-serif;
+            font-size: 20px;
+            color: whitesmoke;
+            text-align: center;
+            padding: 20px 50px 0px 50px;
+        }
+        .estate3 h3{
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            color: whitesmoke;
+            padding: 50px 0px 10px 370px;
+        }
+        .estate3 p{
+            font-family: 'DM Sans', sans-serif;
+            font-size: 20px;
+            color: whitesmoke;
+            text-align: center;
+            padding: 20px 50px 0px 50px;
+        }
+        
+        /*----------------*/
+
+        footer{
+            height: 280px;
+            width: 100%;
+            background-color: black;
+        }
+        
+        footer h1{
+            color: white;
+            text-align: center;
+            padding: 40px 0px 10px 0px;
+            font-family: 'Poppins', sans-serif;
+        }
+        footer p{
+            color:white;
+            text-align: center;
+            font-family: 'DM Sans', sans-serif;
+        }
+        
+        footer .icons{
+            position: absolute;
+            left:470px;
+        }
+        
+        footer .icons img{
+            height: 35px;
+            width: 35px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <div class="logo">
+                <img src="WakeCup-logo.png" alt="WakeCup-logo">
+                <div class="title">
+                    <h3>Wakecup</h3>
+                </div>
+            </div>
+            
+            <ul>
+                <li class="active">
+                    <a href="about us">About Us</a>
+                </li>
+                <li class="active">
+                    <a href="coffee blends">Coffee Blends</a>
+                </li>
+                <li class="active">
+                    <a href="brewing equipment">Brewing Equipment</a>
+                </li>
+                <li class="active">
+                    <a href="learn with us">Learn with us</a>
+                </li>
+                <li class="active">
+                    <a href="contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- start -->
+    <div class="img-start">
+        <img src="bean1.png" alt="">
+        <h4>The Source</h4>
+    </div>
+    <div class="headline">
+        <p>Our commitment to you is that we source our coffee beans from the finest 
+            estates and plantations from around the world. Our team visits these plantations to assess 
+            and determine the quality of coffee before it makes it to our shortlist. Which is why we have 
+            a really short list, because to us, only the best matter. We also ensure the farms we work 
+            with are free from slave labour and any other malpractice and are ecologically responsible 
+            and follow ethical practices.<p>
+    </div>
+    <!-- stop -->
+
+    <!-- start -->
+    <div class="estate1">
+        <h3>Lima Gold Coffee Plantations, Ethiopia</h3>
+        <p>We came across Lima Gold Plantations by chance during our visit to Ethiopia in 2018. Ever 
+            since then, we’ve been mesmerized by the blends from this amazing estate. And your love 
+            for unique blends from this plantation makes our association strong. </p>
+    </div>
+    <div class="estate2">
+        <h3>Attaca Estate, Brazil</h3>
+        <p>This popular estate was the subject of intrigue after a number of UFO videos emerged from 
+            the region in 2008. We’re sure the UFOs were there for the amazing Arabica that they 
+            cultivate over there. And we agree. Attaca produces some of the finest coffee and we’ve got 
+            them all to prove our point. </p>
+    </div>
+    <div class="estate3">
+        <h3>Vardha Plantations, India</h3>
+        <p>Our coffee hunt in South India sprung up a surprise in 2019 when we came across Mr. 
+            Rajamani Vardha who’s great grandfather established Vardha Plantations in Karnataka, India 
+            in the late 1800s on orders of a British general who wanted great coffee. More than a 
+            century later, Vardha Plantations still produce their uniquely amazing blend that has come 
+            to be a crowd favourite with us.</p>
+    </div>
+    <!-- stop -->
+
+    <!-- footer starts -->
+    <footer>
+        <h1>Stay Connected</h1>
+        <p>Follow us on our social media accounts to get <br>
+             even more tasty content.</p>
+        <div class="icons">
+            <a href=""><img src="facebook.png" alt=""></a>
+            <a href=""><img src="twitter.png" alt=""></a>
+            <a href=""><img src="instagram.png" alt=""></a>
+            <a href=""><img src="youtube.png" alt=""></a>
+        </div>
+    </footer>
+    <!-- footer ends -->
+</body>
+</html>

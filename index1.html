@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Cafes</title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=DM+Sans:opsz,wght@9..40,300&family=Londrina+Solid&family=Nunito&family=Philosopher:wght@700&family=Poppins:wght@600&family=Preahvihear&family=Rhodium+Libre&family=Tilt+Prism&family=Zeyada&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=DM+Sans:opsz,wght@9..40,300&family=Londrina+Solid&family=Nunito&family=Philosopher:wght@700&family=Poppins:wght@600&family=Preahvihear&family=Tilt+Prism&family=Zeyada&display=swap');
+        body{
+            margin: 0px;
+            background-color:white;
+        }
+        nav{
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .nav .logo{
+            display: flex;
+            align-items: center;
+        }
+        .title h3{
+            font-family: 'Preahvihear', sans-serif;
+        }
+        
+        nav .logo img{
+            height: 50px;
+            width: 50px;
+            padding: 20px;
+            border-radius: 50%;
+        }
+        
+        nav .logo .title{
+            color: white;
+            font-weight: bold;
+        }
+        
+        nav ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        
+        nav ul li{
+            color:white;
+            background-color: black;
+            padding: 20px 20px;
+        }
+        
+        nav ul li a{
+            color:white;
+            text-decoration: none;
+            font-family: 'Preahvihear', sans-serif;
+        }
+        
+        nav ul li:hover{
+            background-color: grey;
+        }
+        nav ul li a:hover{
+            color: rgb(20, 20, 20);
+        }
+        
+        .main-page .photo{
+            display: flex;
+        }
+
+        .topimage{
+            background-image: url("co6.jpg");
+            height: 200px;
+            width: 100%;
+            /*background-repeat: no-repeat;
+            background-size: cover;*/
+            object-fit: none;
+            object-position: 50px 30px;
+        }
+        .theme h4{
+            font-family: 'Rhodium Libre', serif;
+            text-align: center;
+            font-size: 45px;
+            
+        }
+        
+
+        .address1{
+            display: flex;
+            margin: 30px 50px 50px 180px;
+        }
+        .address2{
+            display: flex;
+            margin: 30px 50px 50px 180px;
+        }
+        .add1{
+            background-image: url("co7.jpg");
+            height: 380px;
+            width: 400px;
+            filter:brightness(0.4);
+            border-radius: 40px 0px 100px 0px;
+        }
+        .add1:hover{
+            transition: transform 0.3s ease;
+            transform: scale(1.1);
+        }
+        .add2{
+            background-image: url("co8.jpg");
+            height: 380px;
+            width: 400px;
+            filter:brightness(0.5);
+            border-radius: 40px 0px 100px 0px;
+        }
+        .add2:hover{
+            transition: transform 0.3s ease;
+            transform: scale(1.1);
+        }
+        .add3{
+            background-image: url("co9.jpg");
+            height: 380px;
+            width: 400px;
+            filter:brightness(0.5);
+            border-radius: 40px 0px 100px 0px;
+        }
+        .add3:hover{
+            transition: transform 0.3s ease;
+            transform: scale(1.1);
+        }
+        .add4{
+            background-image: url("co10.jpg");
+            height: 380px;
+            width: 400px;
+            filter:brightness(0.4);
+            border-radius: 40px 0px 100px 0px;
+        }
+        .add4:hover{
+            transition: transform 0.3s ease;
+            transform: scale(1.1);
+        }
+        .empty{
+            width: 100px;
+        }
+        .t1, .t3{
+            position: absolute;
+            left:300px;
+            color: rgb(255, 255, 255);
+            z-index: 1;
+        }
+        .t2, .t4{
+            position: absolute;
+            color: rgb(252, 252, 252);
+            left:800px;
+        }
+        .t1 h1{
+            font-family: 'Rhodium Libre', serif;
+            position: relative;
+            top: 30px;
+        }
+        .t2 h1{
+            font-family: 'Rhodium Libre', serif;
+            position: relative;
+            top: 30px;
+            left:15px;
+        }
+        .t3 h1{
+            font-family: 'Rhodium Libre', serif;
+            position: relative;
+            top: 30px;
+            left:25px;
+        }
+        .t4 h1{
+            font-family: 'Rhodium Libre', serif;
+            position: relative;
+            top: 30px;
+        }
+        .t1 h3{
+            font-family: 'Darker Grotesque', sans-serif;
+            font-size: 23px;
+            position: relative;
+            top: 75px;
+            left:35px;
+        }
+        .t2 h3{
+            font-family: 'Darker Grotesque', sans-serif;
+            font-size: 23px;
+            position: relative;
+            top: 75px;
+            left:50px;
+        }
+        .t3 h3{
+            font-family: 'Darker Grotesque', sans-serif;
+            font-size: 23px;
+            position: relative;
+            top: 75px;
+            left:35px;
+        }
+        .t4 h3{
+            font-family: 'Darker Grotesque', sans-serif;
+            font-size: 23px;
+            position: relative;
+            top: 75px;
+            left:35px;
+        }
+        .t1 p{
+            font-family: 'Darker Grotesque', sans-serif;
+            font-size: 16px;
+            position: relative;
+            top:70px;
+        }
+        .t2 p{
+            font-family: 'Darker Grotesque', sans-serif;
+            font-size: 16px;
+            position: relative;
+            top:70px;
+            right: 20px;
+        }
+        .t3 p{
+            font-family: 'Darker Grotesque', sans-serif;
+            font-size: 16px;
+            position: relative;
+            top:70px;
+            left:15px;
+        }
+        .t4 p{
+            font-family: 'Darker Grotesque', sans-serif;
+            font-size: 16px;
+            position: relative;
+            top:70px;
+            left:15px;
+        }
+
+        .content{
+            margin: 50px;
+        }
+        .content h2{
+            text-align: center;
+            font-family: 'Rhodium Libre', serif;
+            font-size: 30px;
+        }
+        .content h3{
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+        }
+        .content p{
+            text-align: center;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 20px;
+        }
+
+        footer{
+            height: 280px;
+            width: 100%;
+            background-color: black;
+        }
+        
+        footer h1{
+            color: white;
+            text-align: center;
+            padding: 40px 0px 10px 0px;
+            font-family: 'Poppins', sans-serif;
+        }
+        footer p{
+            color:white;
+            text-align: center;
+            font-family: 'DM Sans', sans-serif;
+        }
+        
+        footer .icons{
+            position: absolute;
+            left:470px;
+        }
+        
+        footer .icons img{
+            height: 35px;
+            width: 35px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-page">
+        <div class="nav">
+            <nav>
+                <div class="logo">
+                    <img src="WakeCup-logo.png" alt="WakeCup-logo">
+                    <div class="title">
+                        <h3>Wakecup</h3>
+                    </div>
+                </div>
+                
+                <ul>
+                    <li class="active">
+                        <a href="about us">About Us</a>
+                    </li>
+                    <li class="active">
+                        <a href="coffee blends">Coffee Blends</a>
+                    </li>
+                    <li class="active">
+                        <a href="brewing equipment">Brewing Equipment</a>
+                    </li>
+                    <li class="active">
+                        <a href="learn with us">Learn with us</a>
+                    </li>
+                    <li class="active">
+                        <a href="contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="topimage"></div>
+        <div class="theme">
+            <h4>Our Cafes</h4>
+        </div>
+        <div class="address1">
+            <div class="t1">
+                <h1>Kennewick</h1>
+                <h3>Edison</h3>
+                <p>5215 W. Okanogan Ave.</p>
+            </div>
+            <div class="add1"></div>
+            <div class="empty"></div>
+            <div class="add2"></div>
+            <div class="t2">
+                <h1>Richland</h1>
+                <h3>GWay</h3>
+                <p>496 George Washington Way</p>
+            </div>
+        </div>
+        <div class="address2">
+            <div class="t3">
+                <h1>Pasco</h1>
+                <h3>20th Ave</h3>
+                <p>2525 N. 20th Ave.</p>
+            </div>
+            <div class="add3"></div>
+            <div class="empty"></div>
+            <div class="add4"></div>
+            <div class="t4">
+                <h1>Walla Walla</h1>
+                <h3>Walla Walla</h3>
+                <p>1110 Dalles Military Rd.</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="content">
+            <h2>Gift Cards & Loyalty</h2>
+            <h3>WE WILL BE HONORING EXISTING GIFT CREDIT AND LOYALTY BALANCES</h3>
+            <p>All existing Tri-Cities Black Rock customers have been added to our system and will find that their gift credit and points balances have been added as well. In order to use your gift card balance, you'll need to have your barista issue you a new Wake Up Call card for your phone number.</p>
+        </div>
+
+        <footer>
+            <h1>Stay Connected</h1>
+            <p>Follow us on our social media accounts to get <br>
+                 even more tasty content.</p>
+            <div class="icons">
+                <a href=""><img src="facebook.png" alt=""></a>
+                <a href=""><img src="twitter.png" alt=""></a>
+                <a href=""><img src="instagram.png" alt=""></a>
+                <a href=""><img src="youtube.png" alt=""></a>
+            </div>
+        </footer>
+</body>
+</html>
